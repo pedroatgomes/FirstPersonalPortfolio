@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #dbd8d8;
+}
+
+/*header section*/
+header {
+    width: 100%;
+    height: 4.5em;
+    background-color: #00D8BD;
+    border-bottom: 0.2rem solid #FFFFFF;
+    position: fixed;
+    z-index: 1;
+    
+}
+
+/*header section nav */ 
+nav {
+    height: 100%;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+
+}
+
+li {
+    color: #FFFFFF;
+    font-weight: 700;
+    display: inline;
+    font-size: 1rem;
+    margin-right: 2rem;
+}
+
+a { 
+    text-decoration: none;  
+    color: #FFFFFF;
+}
+
+li:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/*header section logo */ 
+.logo {
+    height: 80%;
+    width: auto;
+    margin: 0.5rem 0 0.5rem 0; 
+}
+
+/*main section*/ 
+main {
+    width: 100%;
+    height: 800px;
+    background-image: url(./images/andrik.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position:center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 3rem ;
+    font-weight: 700;
+    line-height:4rem;
+    color: #FFFFFF;
+
+}
+/*about section*/ 
+.about {
+    width: 100%;
+    height: 180px;
+    background-color: #00D8BD;
+    display: flex;
+    justify-content:space-around;
+    border-top: 0.2rem solid #FFFFFF;
+
+}
+
+.aboutext {
+    width: 20%;
+    height: 50%;
+    margin-left: 2rem;
+    color:#FFFFFF;   
+}
+
+
+.aboutext h3 {
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+}
+
+p {
+    color: #000;
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+}
+/*skill section*/ 
+
+.skilltext {
+    margin-top: 2rem;
+    width: 20%;
+    height: 50%;
+    color:#FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.skilltext img {
+    width: 50px;
+    height: auto;
+} 
+/*project section*/ 
+
+.projectsmain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.projects { 
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*container projects*/                
+.firstw  {
+    width: 400px;
+    height: 500px;
+    background-color: #FFFFFF;
+    border: 1px solid #000;
+    box-shadow: 3px 3px 25px rgb(114, 114, 114); 
+        
+}  
+
+.project1 {
+    width: 400px;
+    
+}
+
+hr {
+    width: 80%;
+}
+/*footer section*/ 
+
+footer {
+    margin-top: 2rem;
+    width: 100%;
+    height: 5rem;
+    background-color: #00D8BD;
+    border-top: 0.2rem solid #FFFFFF
+}
+
+.contacts {
+    width: 50px;
+    height: 120px;
+    background-color: #00D8BD;
+    position: fixed;
+    z-index: 4;
+    margin-top: 15rem;
+    border-radius: 3px;
+    box-shadow: 3px 3px 25px rgb(114, 114, 114); 
+    opacity: 80%;
+
+}
+.icons {
+    flex-direction: column;
+    display: flex;
+    margin-top: 0.5rem;
+    
+}
+
+
+.icons img {
+    width: 30px;
+    padding: 0.5rem;
+    
+}
+
+
+@media only screen and (max-width: 1240px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    
+    }
+    
+    .aboutext { 
+        margin-top: 2rem;
+        margin-left: 0;
+        color:#FFFFFF; 
+        width: 500px;
+        text-align: center;  
+    }
+    
+    
+    .aboutext h3 {
+        margin-top: 0.4rem;
+        margin-bottom: 0rem;
+    }
+    
+    p {
+        color: #000;
+        font-weight: 400;
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+    }
+    /*skill section*/ 
+    
+    .skilltext {
+        width: 45%;
+        height: 50%;
+        color:#FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .skilltext img {
+        width: 50px;
+        height: auto;
+    } 
+    
+    
+    .projects { 
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    .firstw {
+        margin-top: 2rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    header {
+        height: 150px;
+    }
+    
+    nav ul {
+        margin: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    li{
+        padding: 0.3rem;
+    }
+
+    .logo {
+        display: none;
+         
+    }
+    .aboutext { 
+        width: 300px;
+          
+    }
+    .skilltext {
+        width: 300px;
+    }
+}

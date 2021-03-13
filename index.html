@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="resources/styles.css" type="text/css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"type="text/javascript"></script>
+    <title>Pedro Gomes</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="resources/images/pedro.png">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PROJECTS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contacts">
+        <dix class="icons">
+            <img src="./resources/images/linkdin.png">
+            <img src="./resources/images/github.png">
+        </dix>
+
+    </div>
+
+<main>
+  
+    <h1>Hi, I'm Pedro a Full Stack Devloper</h1>
+</main>
+
+<section>
+    <div class="about">
+        <div class="aboutext">
+            <h3>About</h3>
+            <p>I’m a Junior Full-Stack Developer located in UK. Interested in building responsive websites and emprove my skills learning new things every day.</p>
+        </div>
+        <div class="skilltext">
+            <h3>Skills</h3>
+            <img src="./resources/images/html.png">
+            <img src="./resources/images/css.png">
+            <img src="./resources/images/js.png">
+            
+        </div>
+    </div>
+</section>
+
+<section class="projectsmain">
+    <h3>Projects</h3>
+    <div class="projects">
+        
+        <div class="firstw">
+            <img class="project1"src="resources/images/someonephoto.png">
+            <h4>Company Home Page with Flexbox</h4>
+            <hr>
+            <p>In this Codecademy project, I’ll be using flexbox to design and build the layout for a company’s homepage. I can choose to build a new homepage for an existing company or imagine your own dream company!​</p>
+        </div>
+        <div class="firstw">
+            <img class="project1" src="resources/images/retrocar.png">
+            <h4>Responsive Club Website</h4>
+            <hr>
+            <p>This Codecademy project in this project, I’ll be building your own club group page that will dynamically respond as you adjust the size of your screen.</p>
+        </div>
+        <div class="firstw">
+            <img class="project1" src="resources/images/mixedmsg.png">
+            <h4>Mixed Menssages</h4>
+            <hr>
+            <p>This Codecademy JavaScript portfolio that generates randomly meals based in three different pieces of data.
+            </p>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="contacts">
+        <dix class="icons">
+            <img src="./resources/images/linkdin.png">
+            <img src="./resources/images/github.png">
+        </dix>
+
+    </div>
+</footer>
+
+<script>
+    var textWrapper = document.querySelector('h1');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: false})
+  .add({
+    targets: 'h1',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: 'h1',
+    opacity: 100,
+    duration: 1000,
+  })
+
+
+</script>
+    
+</body>
+</html>
